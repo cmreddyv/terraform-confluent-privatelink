@@ -11,7 +11,7 @@ resource "confluent_network" "this" {
       resolution = "PRIVATE"
     }
     lifecycle {
-      prevent_destroy = true
+      prevent_destroy = false
     }
   
 }
