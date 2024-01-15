@@ -22,7 +22,7 @@ resource "confluent_private_link_access" "this" {
       account = var.aws_account_id
     }
     environment {
-      id = confluent_environment.this.id
+      id = var.environment_id
     }
     network {
       id = confluent_network.this.id

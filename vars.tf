@@ -21,3 +21,6 @@ variable "subnets_to_privatelink" {
 variable "aws_account_id" {
   type = string
 }
+variable "environment_id" {
+    type = string
+}
