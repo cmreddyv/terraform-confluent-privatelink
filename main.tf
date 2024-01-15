@@ -5,7 +5,7 @@ resource "confluent_network" "this" {
     connection_types = ["PRIVATELINK"]
     zones = var.subnets_to_privatelink
     environment {
-      id = confluent_environment.this.id
+      id = var.environment_id
     }
     dns_config {
       resolution = "PRIVATE"
